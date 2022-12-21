@@ -10,15 +10,13 @@ using UnityEngine;
 using UnityEditor.VersionControl;
 using UnityEngine.UIElements;
 
-
+// region_growing, 3D region growing, csharp, c#, region growing segmentation
 public class RegionGrowingManager : MonoBehaviour
 {
     public void RegionGrowing()
     {
         if (!flag)
         {
-            List<ushort> ushortList = new List<ushort>();
-            flag = false;
             int width = openCvManager.width; // 3d volume width size
             int height = openCvManager.height; // 3d volume height size
             int depth = openCvManager.depth; // 3d volume depth size
